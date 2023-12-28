@@ -30,6 +30,11 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   font-size: 1rem;
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 h1,
@@ -45,6 +50,8 @@ ul {
 }
 
 h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 img {
@@ -52,27 +59,121 @@ img {
   display: block;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 /* Common styles */
+
 /* Display */
 
 .d-flex {
   display: flex;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
 /* Flex basis */
 
 /* Width */
+.w-30 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.w-100 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Text */
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fs-2 {
+  font-size: 1.2rem;
+}
 
 /* Padding */
 
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 1.5rem;
+}
+
 /* Margins */
+
+.my-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Card styling */
+
+.card {
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px black;
+  border: 2px solid black;
+}
+
+.card:hover {
+  box-shadow: 20px 20px black;
+}
+.card-img {
+  border-radius: 1rem;
+}
+
+.card-text span {
+  border-radius: 0.3rem;
+  font-weight: 900;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 10%;
+}
+
+.user-name {
+  margin: 0;
+  padding-left: 1rem;
+  font-weight: 900;
+}
+
+.card-header:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 85%;
+    box-shadow: 8px 8px black;
+  }
+
+  .card-text span {
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+
+  .card-text p:first-of-type {
+    font-size: 0.8rem;
+  }
+
+  .card-header {
+    font-size: 1rem;
+  }
+
+  .card-text .text-primary {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
